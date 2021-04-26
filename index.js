@@ -2,7 +2,7 @@
 const http = require("http");
 const fs = require("fs");
 var requests = require("requests");
-
+const port = process.env.PORT || 8000;
 
 const homeFile = fs.readFileSync("home.html", "utf-8");
 
@@ -21,7 +21,7 @@ const replaceVal = (tempVal, orgVal) => {
 const server = http.createServer((req, res) => {
     if (req.url == "/") {
         requests(
-            "http://api.openweathermap.org/data/2.5/weather?q=ujjain&units=metric&appid=9281f209910455b37df25a8a3176f1f2"
+            "https://api.openweathermap.org/data/2.5/weather?q=ujjain&units=metric&appid=9281f209910455b37df25a8a3176f1f2"
         )
             .on("data", (chunk) => {
                 const objdata = JSON.parse(chunk);
@@ -41,4 +41,4 @@ const server = http.createServer((req, res) => {
 
 });
 
-server.listen(8000, "127.0.0.1");
+server.listen(port, "127.0.0.1");

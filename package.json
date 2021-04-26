@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Vishal Bagwan",
-  "license": "ISC",
   "dependencies": {
     "requests": "^0.3.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    ,"start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalbagwan/Weather-App.git"
+  },
+  "author": "vishal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalbagwan/Weather-App/issues"
+  },
+  "homepage": "https://github.com/vishalbagwan/Weather-App#readme"
 }
