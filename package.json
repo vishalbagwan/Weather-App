@@ -2,14 +2,14 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "requests": "^0.3.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
